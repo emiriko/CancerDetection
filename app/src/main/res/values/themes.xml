@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Asclepius" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/queen_blue</item>
+        <item name="colorPrimaryVariant">@color/pale_spring</item>
+        <item name="colorOnPrimary">@color/eton_blue</item>
+        <item name = "colorPrimaryContainer"> @color/queen_blue </item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/queen_blue</item>
+
+        <item name="actionBarTheme">@style/Theme.ActionBarStyle</item>
+        
+        <!-- Bottom Nav Background. -->
+        <item name="bottomNavigationStyle">@style/MyBottomNavigation</item>
+    </style>
+
+    <style name="Theme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+            <item name="android:titleTextStyle">@style/Theme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="Theme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor"> @color/colorPrimary  </item>
+    </style>
+    
+    <style name="MyBottomNavigation" parent="Widget.Design.BottomNavigationView">
+        <item name="android:background">@color/polished_pine</item>
+    </style>
+</resources>
